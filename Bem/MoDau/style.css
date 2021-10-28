@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+body>div {
+    margin: auto;
+}
+
+.btn {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    min-width: 80px;
+    padding: 12px 48px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity .2 ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+
+}
+
+/* trich nhanh css thuộc tính liền kề */
+.btn+.btn {
+    margin-left: 16px;
+}
+
+.btn--success {
+    background-color: forestgreen;
+}
+
+.btn-warn {
+    background-color: orange;
+}
+
+.btn--danger {
+    background-color: red;
+}
+
+.btn--disable {
+    opacity: 0.5 !important;
+    cursor: default;
+    /*  background-color: gray; */
+}
+
+.btn--size-l {
+    padding: 20px 60px;
+}
+
+.btn--size-s {
+    padding: 10px 30px;
+}
