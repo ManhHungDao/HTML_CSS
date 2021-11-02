@@ -1,0 +1,366 @@
+.header {
+    height: 120px;
+    background-image: linear-gradient(#f53d2d, #fe6432);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar-item {
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px;
+}
+
+.navbar-item,
+.navbar-item-link {
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/*  hiện mã qr */
+/* .header-show_qr:hover .header__qr{
+    display: block;
+} */
+.navbar-item:first-child:hover .header__qr {
+    display: block;
+}
+
+.navbar-item--bold {
+    font-weight: bold;
+}
+
+.navbar-item--separate::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #FB9086;
+    height: 16px;
+    right: -9px;
+    top: 35%;
+    transform: translateY(-50%)
+}
+
+.navbar-item:hover,
+.navbar-item-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.navbar-item,
+.navbar-item-link,
+.nav_icon {
+    display: inline-block;
+    align-items: center;
+}
+
+.nav_icon {
+    font-size: 1.6rem;
+    margin: 0 4px;
+    color: var(--white-color);
+}
+
+.disable-title {
+    cursor: text;
+    color: var(--white-color);
+}
+
+/* header QR code */
+.header__qr {
+    background-color: var(--white-color);
+    width: 180px;
+    position: absolute;
+    left: 0;
+    top: 118%;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+    animation: fadeIn ease-in 0.3s;
+}
+
+.header__qr::before {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: -18px;
+    content: '';
+    display: block;
+
+}
+
+.qr-img {
+
+    width: 100%;
+}
+
+.qr-apps {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qr-img-dowload {
+    height: 15px;
+}
+
+.qr-img-dowload:first-child {
+    margin-left: 11px;
+}
+
+.qr-img-dowload:last-child {
+    margin-right: 11px;
+}
+
+/*  notification header */
+.show-notify:hover .navbar__notify {
+    display: block;
+}
+
+@keyframes NotifyShow {
+    from {
+        opacity: 0;
+        transform: scale(0)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.navbar__notify {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 404px;
+    background-color: #fff;
+    display: none;
+    border: 1px solid gray;
+    cursor: default;
+    transform-origin: calc(100% - 20px) top;
+    animation: NotifyShow ease-in .3s;
+    will-change: opacity, transform;
+}
+
+.navbar__notify::before {
+    content: "";
+    border-width: 20px 25px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 1px;
+    top: -26px;
+}
+
+.navbar__notify::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -16px;
+    width: 90px;
+    height: 20px;
+}
+
+.navbar__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.navbar__notify-header h3 {
+    color: #666;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    line-height: 40px;
+}
+
+.navbar__notify-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.navbar__notify-item {}
+
+.notify-item--viewed {
+    background-color: #FB9086;
+}
+
+.navbar__notify-link {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+}
+
+.navbar__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.navbar__notify-link:hover {
+    background-color: #f1ecec;
+}
+
+.navbar__notify-info {
+    margin-left: 8px;
+}
+
+.navbar__notify-name {
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.navbar__notify-description {
+    color: #494745;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.navbar__notify-footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar__notify-footer-btn {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.auth-form {
+    width: 500px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.auth-form__container {
+    padding: 0 32px;
+
+}
+
+.auth-form__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.auth-form__swich-btn {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    cursor: pointer;
+
+}
+
+.auth-form__form {}
+
+.auth-form__group {}
+
+.auth-form__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    outline: none;
+}
+
+.auth-form__input:focus {
+    border-color: #777;
+}
+
+
+.auth-form__policy-text {
+    margin: 18px 0;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__policy-link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form__controls {
+    margin: 80px 0 30px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.btn.btn--primary {
+    margin-left: 5px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+
+}
+
+.btn.btn--disable {
+    cursor: default;
+    background-color: #999;
+    color: #ccc;
+
+}
+
+.auth-form__socials {
+    background-color: rgb(235, 231, 231);
+    padding: 12px 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+
+.btn--wich--icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+.btn--wich--icon .fab {
+    font-size: 1.8rem;
+
+}
+
+.auth-form__socials .btn--wich--icon:first-child {
+    background-color: #046ee5;
+    color: var(--white-color);
+}
+
+.auth-form__socials-title {
+    margin: 0 20px;
+}

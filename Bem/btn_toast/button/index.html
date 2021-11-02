@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script type="text/javascript" src="javascrip.js"></script>
     <title>Document</title>
 </head>
 
@@ -22,42 +23,28 @@
 
     <!--  button -->
     <div class="container">
-        <button class="btn btn--succcess">Success</button>
-        <button class="btn btn--warning">Warning</button>
+        <button onclick="showSuccessToast();" class="btn btn--success">Success</button>
+        <button onclick="showErrorToast();" class="btn btn--warning">Error</button>
 
     </div>
 
     <script>
-        function toast(title = '',
-            message = '',
-            type = 'info',
-            duration = 3000) {
-            const main = document.getElementById('toast');
-            if (main) {
-                const toast = document.createElement('div');
-                toast.classList.add('toast');
-                toast.innerHTML = `
-                    <div class="toast__icon">
-                        <i class="fa fa-check-circle"></i>
-                    </div>
-                    <div class="toast__body">
-                        <h3 class="toast__title">${title}</h3>
-                        <p class="toast__msg">${message}</p>
-                    </div>
-                    <div class="toast__close">
-                        <i class="fas fa-times"></i>
-                    </div>
-                `;
-                main.appendChild(toast);
-            }
+        showSuccessToast = () => {
+            toast({
+                title: "Thành công!",
+                message: "Bạn đã đăng ký thành công tài khoản.",
+                type: "success",
+                duration: 10000
+            });
         }
-
-        toast({
-            title: "Thành công!",
-            message: "Bạn đã đăng ký thành công tài khoản.",
-            type: "success",
-            duration: 5000
-        });
+        showErrorToast = () => {
+            toast({
+                title: "Có lỗi!",
+                message: "Đã xảy ra lỗi.",
+                type: "error",
+                duration: 10000
+            });
+        }
     </script>
 </body>
 

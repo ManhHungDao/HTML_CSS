@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    display: flex;
+    min-height: 600px;
+    background-color:lightskyblue;
+}
+.wrap{
+    margin:auto;
+}
+.search{
+    display:flex;
+    padding:20px 100px;
+    border-radius: 15px;
+}
+.search_input{
+    width:100px;
+    border: none;
+}
+.search_btn{
+    border: none;
+    outline: none;
+    padding:10px;
+}
+
