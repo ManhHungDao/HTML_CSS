@@ -107,7 +107,20 @@
                         </svg>
                     </div>
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item"><a href="#">Kem dưỡng da</a>
+                                    </li>
+                                    <li class="header__search-history-item"><a href="#">Váy chống nắng</a>
+                                    </li>
+                                    <li class="header__search-history-item"><a href="#">Găng tay</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-selections">
                             <span class="header__search-label">Trong shop</span>
                             <i class="header__search-icon fas fa-angle-down"></i>
@@ -125,17 +138,94 @@
                         </button>
                     </div>
                     <div class="header__cart">
-                        <i class="header__Cart-icon fas fa-shopping-bag"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">
+                                3
+                            </span>
+                            <!-- empty cart :  header__cart-empty-cart-->
+                            <div class="header__cart-list ">
+                                <img src="accset/img/empty-cart-1.png" alt="Empty cart"
+                                    class="header__cart-empty-cart-img">
+                                <span class="header__cart-list-msg">Chưa có sản phẩm</span>
+                                <h4 class="header__cart-heading">
+                                    Sản phẩm đã thêm
+                                </h4>
+                                <ul class="header__cart-items">
+                                    <!--   cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="accset/img/anesa.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại hàng: Bạc
+                                                </span>
+                                                <span class="header__cart-item-rm">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="accset/img/anesa.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại hàng: Bạc
+                                                </span>
+                                                <span class="header__cart-item-rm">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="accset/img/anesa.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-des">
+                                                    Phân loại hàng: Bạc
+                                                </span>
+                                                <span class="header__cart-item-rm">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <a class="header__cart--viewcart btn btn--primary">Xem giỏ hàng </a>
+
+
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <!--      model lay out -->
         <div class="modal">
-            <div class="modal__overlay"></div>
-            <div class="modal__body">
-                <!--        register form -->
-                <!--  <div class="auth-form">
+            <div class="modal__overlay">
+                <div class="modal__body">
+                    <!--        register form -->
+                    <!--  <div class="auth-form">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
                             <h3 class="auth-form__heading">Đăng ký</h3>
@@ -176,42 +266,43 @@
                 </div> -->
 
 
-                <!--        login form -->
-                <div class="auth-form">
-                    <div class="auth-form__container">
-                        <div class="auth-form__header">
-                            <h3 class="auth-form__heading">Đăng nhập</h3>
-                            <span class="auth-form__swich-btn"> Đăng ký</span>
-                        </div>
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="email" class="auth-form__input" placeholder="Your email">
+                    <!--        login form -->
+                    <div class="auth-form">
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng nhập</h3>
+                                <span class="auth-form__swich-btn"> Đăng ký</span>
                             </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Password">
-                            </div>
+                            <div class="auth-form__form">
+                                <div class="auth-form__group">
+                                    <input type="email" class="auth-form__input" placeholder="Your email">
+                                </div>
+                                <div class="auth-form__group">
+                                    <input type="password" class="auth-form__input" placeholder="Password">
+                                </div>
 
 
-                        </div>
-                        <div class="auth-form__aside">
-                            <div class="auth-form__help">
-                                <a href="#" class="auth-form__link">Quên mật khẩu</a>
-                                <span class="auth-form__help--separate"></span>
-                                <a href="#" class="auth-form__link">Cần trợ giúp?</a>
+                            </div>
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="#" class="auth-form__link">Quên mật khẩu</a>
+                                    <span class="auth-form__help--separate"></span>
+                                    <a href="#" class="auth-form__link">Cần trợ giúp?</a>
+                                </div>
+                            </div>
+                            <div class="auth-form__controls">
+                                <button class="btn btn_hover">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
                             </div>
                         </div>
-                        <div class="auth-form__controls">
-                            <button class="btn btn_hover">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        <div class="auth-form__socials">
+                            <a href="#" class="btn btn--wich--icon">
+                                <i class="fab fa-facebook-square"></i>
+                                <span class="auth-form__socials-title">Kết nối với Facabook</span></a>
+                            <a href="#" class="btn btn--wich--icon">
+                                <i class="fab fa-google"></i>
+                                <span class="auth-form__socials-title">Kết nối với Google</span></a>
                         </div>
-                    </div>
-                    <div class="auth-form__socials">
-                        <a href="#" class="btn btn--wich--icon">
-                            <i class="fab fa-facebook-square"></i>
-                            <span class="auth-form__socials-title">Kết nối với Facabook</span></a>
-                        <a href="#" class="btn btn--wich--icon">
-                            <i class="fab fa-google"></i>
-                            <span class="auth-form__socials-title">Kết nối với Google</span></a>
                     </div>
                 </div>
             </div>
