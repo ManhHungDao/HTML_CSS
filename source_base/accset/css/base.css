@@ -137,6 +137,8 @@ html {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+
+/* select */
 .select-input {
     min-width: 200px;
     height: 34px;
@@ -157,7 +159,6 @@ html {
     color: #717171;
     font-size: 1.4rem;
     border-radius: 2px;
-    box-shadow: 0 1px 1px #ccc;
 
 }
 
@@ -188,4 +189,23 @@ html {
     display: block;
     padding: 10px 12px;
     color: #717171;
+}
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+
+.select-input::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
+
 }
