@@ -34,16 +34,18 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* test */
-.grid__column-2{
-    padding-left:12px;
+.grid__column-2 {
+    padding-left: 12px;
     padding-right: 12px;
     width: 16.6667%;
 }
-.grid__column-10{
-    padding-left:12px;
+
+.grid__column-10 {
+    padding-left: 12px;
     padding-right: 12px;
-    width:calc(100% - 16.6667%);
+    width: calc(100% - 16.6667%);
 }
 
 /* test */
@@ -113,7 +115,7 @@ html {
 }
 
 .btn {
-    min-width: 90px;
+    min-width: 124px;
     height: 36px;
     outline: none;
     border: none;
@@ -128,9 +130,62 @@ html {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color:var(--white-color);
+    background-color: var(--white-color);
 }
 
 .btn.btn_hover:hover {
     background-color: rgba(0, 0, 0, 0.05);
+}
+
+.select-input {
+    min-width: 200px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    animation: fadeIn ease-in 0.2s;
+
+    /*  line-height: 34px; */
+}
+
+.select-input__lable {
+    color: #717171;
+    font-size: 1.4rem;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px #ccc;
+
+}
+
+.select-input__icon {
+    color: #999;
+    cursor: pointer;
+    margin: 0;
+}
+
+.select-input__list {
+    list-style: none;
+    position: absolute;
+    top: calc(100% - 8px);
+    right: 0;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    padding-left: 0;
+    font-weight: 500;
+    width: 100%;
+    display: none;
+    padding-top: 5px;
+}
+
+.select-input__link {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+    color: #717171;
 }

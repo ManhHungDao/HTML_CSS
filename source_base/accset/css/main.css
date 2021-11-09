@@ -884,10 +884,7 @@
 /* css body */
 .app__container {
     background-color: #f5f5f5;
-    padding-top:32px;
-}
-
-.grid__column-2 .grid__column-10{
+    padding-top: 32px;
 }
 
 .category {
@@ -953,3 +950,89 @@
     right: -4px;
     color: var(--primary-color);
 }
+
+.grid__column-2 .grid__column-10 {}
+
+.home-filter {
+    background-color: #ededed;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.home-filter__lable {
+    color: #717171;
+    font-size: 1.6rem;
+    margin-right: 17px;
+}
+
+/* danh sách chọn lọc giá */
+
+.select-input:hover .select-input__list {
+    display: block;
+}
+.select-input::before{
+    content:"";
+    display:block;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.select-input__link:hover {
+    color: var(--primary-color);
+
+}
+
+/* danh sách chọn lọc giá */
+
+
+
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+}
+
+.home-filter .btn--primary {
+    margin: 0;
+}
+
+.home-filter .btn {
+    margin-right: 12px;
+    min-width: 90px;
+}
+
+.home-filter__page-num {}
+
+.home-filter__page-current,
+.home-filter__page-chac,
+.home-filter__page-lastpage {
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.home-filter__page-lastpage {
+    margin-right: 10px;
+}
+
+.home-filter__page-control {}
+
+.home-filter__page-btn {
+    background-color: var(--white-color);
+    border-radius: 2px;
+    padding: 12px 14px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.home-filter__page-btn-left,
+.home-filter__page-btn-right {}
+
+.home-filter__page-btn-left {
+    background-color: #F5F5F5;
+}
+
+.home-filter__page-btn-right {}
