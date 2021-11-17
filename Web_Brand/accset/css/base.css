@@ -2,14 +2,37 @@
     --white-color: #fff;
     --text-color:#000;
 }
-
+::placeholder{
+    color: #ccc;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
 * {
     box-sizing: inherit;
 }
-
 html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+.grid{
+    max-width: 800px;
+}
+.btn{
+    min-width: 71px;
+    height:38px;
+    background-color: #000;
+    color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:#ccc;
+    color: #000;
 }

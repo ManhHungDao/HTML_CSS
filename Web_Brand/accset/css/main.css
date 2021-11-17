@@ -19,8 +19,9 @@ header {
     padding-left: 0;
     border: none;
 }
-.nav_icon{
-}
+
+.nav_icon {}
+
 .navbar__list--item {
     display: inline-block;
 }
@@ -31,16 +32,16 @@ header {
     font-size: 1.7rem;
     color: var(--white-color);
     line-height: 46px;
-    display:inline-block;
+    display: inline-block;
     padding: 0 20px;
 }
 
-.navbar__list--item:hover .navbar__list--item-link{
+.navbar__list--item:hover .navbar__list--item-link {
     background-color: var(--white-color);
     color: var(--text-color);
 }
 
-.navbar__list--item-search:hover {
+.navbar__list--item:hover .navbar__list--item-search {
     background-color: rgb(233, 105, 58);
     color: #ccc;
 
@@ -63,9 +64,10 @@ header {
     padding-left: 0;
     font-size: 1.7rem;
     list-style: none;
-    z-index: 1;
     animation: fadeIn ease-in 0.2s;
     display: none;
+    z-index: 1 !important;
+
 
 }
 
@@ -93,7 +95,282 @@ header {
 
 }
 
-body {
-    height: 1600px;
-    background-color: yellow;
+
+.slider {
+    margin-top: 46px;
+    background-color: #ccc;
+    padding-top: 50%;
+    background: url('/Web_Brand/accset/img/la.jpg') top center / cover no-repeat;
+    position: relative;
+}
+
+.slider__heading {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.slider__header {
+    font-size: 2rem;
+}
+
+.slider__des {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.section {
+    margin: 60px 0 70px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.section__heading {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.section i {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #ccc;
+    margin-bottom: 28px;
+}
+
+.section__des {
+    text-align: justify;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+
+}
+
+.section__infor {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.section__infor-person--name {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.section__infor-person--img {
+    width: 153px;
+    height: 153px;
+    border-radius: 3px;
+}
+
+.tour {
+    background-color: #000;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 122px;
+}
+
+.tour .grid {
+    width: 100%;
+}
+
+.tour__heading {
+    padding: 45px 0 30px;
+    text-align: center;
+}
+
+.tour__heading-header {
+    font-size: 2.8rem;
+    font-weight: 300;
+    width: 100%;
+}
+
+.tour__heading-sub {
+    font-size: 1.4rem;
+    color: #ccc;
+
+}
+
+.tour_month {
+    padding: 0 16px;
+    display: flex;
+}
+
+.tour__month-item {
+    background-color: var(--white-color);
+    flex: 1;
+    color: #ccc;
+    padding: 10px 16px;
+    line-height: 20px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-bottom: 0.5px solid rgb(105, 105, 105);
+    display: flex;
+    align-items: center;
+}
+
+.tour__item-soldout {
+    margin: 0px 15px;
+    padding: 3px 5px 3px;
+    background-color: orangered;
+    color: var(--white-color);
+    font-weight: 500;
+}
+
+.tour__month-num {
+    margin-left: auto;
+    background-color: #000;
+    border-radius: 30px;
+    padding: 3px 10px;
+}
+
+.tour__senery {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.tour__senery-item {
+    width: 32%;
+    background-color: var(--white-color);
+
+}
+
+.tour__senery-body {
+    margin: 15px 15px;
+    color: #000;
+    font-weight: 300;
+}
+
+.tour__senery-img {
+    padding-top: 50%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tour__senery-header {}
+
+.tour__senery-day {
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.tour__senery-des {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.contact .grid {
+    width: 100%;
+}
+
+.contact {
+    margin: 90px 0 112px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white-color);
+    color: #000;
+}
+
+.contact__heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-header {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0 0 32px;
+}
+
+.contact-sub-header {
+    font-weight: 300;
+    color: #999;
+    font-size: 1.4rem;
+}
+.contact__body{
+    margin: 5px 20px;
+    position: relative;
+}
+.contact__information {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+
+.contact__information--about {
+    flex: 1;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.contact__information--about span{
+    display: inline-block;
+    padding: 5px 0 0 10px;
+
+}
+.contact__information--about-add span{
+    padding-left: 13px;
+}
+.contact__information--about .fas {
+    font-size: 1.6rem;
+}
+
+.contact__information--sign {
+    flex: 1;
+}
+.contact__information--sign input{
+    height:40px;
+    border: 1px solid #999;
+    font-size: 1.4rem;
+    border:1px solid #999;
+    padding-left: 10px;
+
+}
+.contact__information--sign-top{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content:space-between;
+}
+.contact__information-sign-name ,.contact__information-sign-email{
+    width: 47%;
+}
+.contact__information-sign-mess{
+    width: 100%;
+    
+}
+.btn__send{
+    position:absolute;
+    right: 0;
+}
+.slider-map{
+    background-image: url(/Web_Brand/accset/img/map.jpg);
+}
+footer{
+    padding:74px 0;
+    display: flex;
+    justify-content: center;
+}
+footer .grid{
+    text-align: center;
+}
+.footer__icon i {
+    font-size:1.8rem;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.footer__icon i:hover {
+    opacity: 0.5;
+}
+.footer__author{
+    padding-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 300;
 }
